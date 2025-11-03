@@ -5,5 +5,9 @@
     "workbench.iconTheme": "catppuccin-macchiato",
     "workbench.colorTheme": "Catppuccin Macchiato",
     "editor.fontFamily": "'Hack', 'monospace', monospace",
-    "editor.rulers": [80, 120]
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "git.openRepositoryInParentFolders": "never"
 }
