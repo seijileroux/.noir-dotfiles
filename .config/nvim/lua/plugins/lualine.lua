@@ -8,16 +8,9 @@ return {
       return
     end
 
-    local has_neopywal, neopywal_lualine = pcall(require, "neopywal.theme.plugins.lualine")
-    if not has_neopywal then
-      return
-    end
-
-    neopywal_lualine.setup()
-
     lualine.setup({
       options = {
-        theme = "neopywal",
+        theme = "catppuccin",
       },
     })
   end,
