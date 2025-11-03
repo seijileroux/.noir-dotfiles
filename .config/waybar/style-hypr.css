@@ -1,7 +1,7 @@
-@import url("themes/colors.css");
+@import url("themes/catppuccin-macchiato.css");
 
 * {
-  font-family: "Maple Mono";
+  font-family: "Hack";
   font-size: 10pt;
   font-weight: 700;
   margin: 0;
@@ -21,7 +21,7 @@
 
 /* The whole bar */
 #waybar {
-  background-color: transparent;
+  background-color: @surface0;
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -46,16 +46,15 @@
 #custom-power-menu {
   margin: 0;
   padding: 0 10px;
-  color: @foreground;
-  background-color: @background;
-  border: 2px;
+  color: @text;
+  background-color: @surface0;
   border-style: solid;
   border-color: @color2;
   border-radius: 7px;
 }
 
 #tray {
-  padding: 7px 10px;
+  padding: 4px 10px;
 }
 
 #tray > .passive {
@@ -64,7 +63,7 @@
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background-color: @color5;
+  background-color: @maroon;
   border-radius: 100px;
 }
 
@@ -86,7 +85,7 @@
 
 #workspaces button.active,
 #workspaces button.focused {
-  color: @color3;
+  color: @sky;
   background-color: transparent;
 }
 
@@ -99,21 +98,21 @@
 
 #workspaces button.urgent,
 #temperature.critical {
-  color: #dd7878;
+  color: @red;
 }
 
 #battery {
-  color: @foreground;
+  color: @text;
 }
 
 #battery.charging,
 #battery.full,
 #battery.plugged {
-  color: #26a65b;
+  color: @green;
 }
 
 #battery.critical:not(.charging) {
-  color: #f53c3c;
+  color: @red;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -123,17 +122,17 @@
 
 #custom-power-menu {
   border-radius: 9.5px;
-  background-color: #1b242b;
+  background-color: @surface0;
   border-radius: 7.5px;
 }
 
 label:focus {
-  background-color: #000000;
+  background-color: @surface0;
 }
 
 @keyframes blink {
   to {
     background-color: rgba(30, 34, 42, 0.5);
-    color: @color15;
+    color: @sapphire;
   }
 }
