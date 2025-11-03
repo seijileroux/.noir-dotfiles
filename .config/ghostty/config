@@ -24,7 +24,8 @@ keybind = alt+tab=next_tab
 keybind = alt+ctrl+tab=previous_tab
 
 # Empty values reset the configuration to the default value
-font-family = "Maple Mono"
+font-family = "Hack Nerd Font"
+font-size = 16
 
 cursor-style = bar
 cursor-style-blink = true
