@@ -1,87 +1,84 @@
 return {
-  "RedsXDD/neopywal.nvim",
+  "catppuccin/nvim",
   enabled = true,
-  name = "neopywal",
+  name = "catppuccin",
   lazy = false,
   priority = 1000,
   opts = {},
   config = function()
-    require("neopywal").setup({
-      use_wallust = true,
-      transparent_background = true,
-      plugins = {
-        alpha = true,
-        dashboard = false,
-        git_gutter = true,
-        indent_blankline = true,
-        lazy = true,
-        lazygit = true,
-        noice = false,
-        notify = true,
-        nvim_cmp = true,
-        mason = true,
+    require("catppuccin").setup({
+    flavour = "macchiato", -- latte, frappe, macchiato, mocha
+    background = { -- :h background
+        light = "latte",
+        dark = "mocha",
+    },
+    transparent_background = true, -- disables setting the background color.
+    float = {
+        transparent = false, -- enable transparent floating windows
+        solid = false, -- use solid styling for floating windows, see |winborder|
+    },
+    show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
+    term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
+    dim_inactive = {
+        enabled = false, -- dims the background color of inactive window
+        shade = "dark",
+        percentage = 0.15, -- percentage of the shade to apply to the inactive window
+    },
+    no_italic = false, -- Force no italic
+    no_bold = false, -- Force no bold
+    no_underline = false, -- Force no underline
+    styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+        comments = { "italic" }, -- Change the style of comments
+        conditionals = { "italic" },
+        loops = {},
+        functions = {},
+        keywords = {},
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+        types = {},
+        operators = {},
+        -- miscs = {}, -- Uncomment to turn off hard-coded styles
+    },
+    lsp_styles = { -- Handles the style of specific lsp hl groups (see `:h lsp-highlight`).
+        virtual_text = {
+            errors = { "italic" },
+            hints = { "italic" },
+            warnings = { "italic" },
+            information = { "italic" },
+            ok = { "italic" },
+        },
+        underlines = {
+            errors = { "underline" },
+            hints = { "underline" },
+            warnings = { "underline" },
+            information = { "underline" },
+            ok = { "underline" },
+        },
+        inlay_hints = {
+            background = true,
+        },
+    },
+    color_overrides = {},
+    custom_highlights = {},
+    default_integrations = true,
+    auto_integrations = false,
+    integrations = {
+        cmp = true,
+        gitsigns = true,
+        nvimtree = true,
+        notify = false,
         mini = {
-          hipatterns = true,
-          indentscope = {
             enabled = true,
-          },
-          pick = true,
-          starter = true,
+            indentscope_color = "",
         },
-        telescope = {
-          enabled = true,
-          -- style = "nvchad"
-        },
-      },
-      fileformats = {
-        c_cpp = true,
-        c_sharp = true,
-        clojure = false,
-        cmake = true,
-        common_lisp = false,
-        css = true,
-        dart = false,
-        diff = true,
-        elixir = false,
-        erlang = false,
-        git_commit = true,
-        go = true,
-        haskell = false,
-        help = true,
-        html = true,
-        ini = false,
-        java = false,
-        javascript = true,
-        javascript_react = false,
-        json = true,
-        kotlin = false,
-        latex = false,
-        less = false,
-        lua = true,
-        makefile = true,
-        markdown = true,
-        matlab = false,
-        objectivec = false,
-        ocaml = false,
-        perl = false,
-        php = true,
-        powershell = false,
-        python = true,
-        restructuredtext = false,
-        ruby = false,
-        rust = true,
-        sass = false,
-        scala = false,
-        shell = true,
-        swift = false,
-        toml = true,
-        typescript = true,
-        viml = true,
-        xml = false,
-        yaml = true,
-        zsh = true,
-      },
-    })
-    vim.cmd.colorscheme("neopywal")
+        -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+    },
+})
+
+-- setup must be called before loading
+vim.cmd.colorscheme "catppuccin"
   end,
 }
