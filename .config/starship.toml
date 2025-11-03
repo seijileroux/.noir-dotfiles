@@ -1,56 +1,54 @@
 add_newline = false
 
 format = """\
-$time$cmd_duration$username\
-[](fg:color2 bg:color4)\
-$directory\
-[](fg:color4 bg:color6)\
+$username$directory\
+[](fg:color4 bg:color5)\
 $git_branch\
 $git_status\
-[](fg:color6 bg:color8)\
+[](fg:color5 bg:color6)\
 $python\
-[](fg:color8)\
+[](fg:color6)\
 $character\
 """
 
 palette = 'colors'
 
 [palettes.colors]
-color1 = '#42008a'
-color2 = '#d5baff'
-color3 = '#ffffff'
-color4 = '#834ed5'
-color5 = '#3a2659'
-color6 = '#d4bbfa'
-color7 = '#eddeff'
-color8 = '#533f74'
+color1 = '#24273a'
+color2 = '#ffffff'
+color3 = '#c6a0f6'
+color4 = '#7dc4e4'
+color5 = '#ee99a0'
+color6 = '#a6da95'
+color7 = '#8bd5ca'
+color8 = '#eed49f'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-format = '[ 󱑍 $time ](fg:color1 bg:color2)'
+format = '[ 󱑍 $time ](fg:color1 bg:color3)'
 
 [cmd_duration]
 min_time = 3000
-format = "[󱑎 $duration ](fg:color1 bg:color2)"
+format = "[󱑎 $duration ](fg:color1 bg:color3)"
 
 [username]
-format = '[$user ](fg:color1 bg:color2)'
+format = '[ $user](fg:color1 bg:color4)'
 
 [directory]
-format = "[ $path ](fg:color3 bg:color4)"
+format = "[ $path ](fg:color1 bg:color4)"
 
 [git_branch]
-format = '[ $symbol$branch(:$remote_branch) ](fg:color5 bg:color6)'
+format = '[ $symbol$branch(:$remote_branch) ](fg:color1 bg:color5)'
 symbol = "  "
 
 [git_status]
-format = '[$all_status ](fg:color5 bg:color6)'
+format = '[$all_status ](fg:color1 bg:color5)'
 
 [git_metrics]
 format = "([+$added ]($added_style))[]($added_style)"
-added_style = "fg:color5 bg:color6"
-deleted_style = "fg:color5 bg:color6"
+added_style = "fg:color1 bg:color5"
+deleted_style = "fg:color1 bg:color5"
 disabled = false
 
 [hg_branch]
@@ -60,7 +58,7 @@ symbol = " "
 [python]
 # Show python version and virtual environment name
 python_binary = ["python3", "python"]
-format = "[ (${virtualenv}) ](fg:color7 bg:color8)"
+format = "[ (${virtualenv}) ](fg:color1 bg:color6)"
 
 [character]
 success_symbol = '[](color1 bold)'
