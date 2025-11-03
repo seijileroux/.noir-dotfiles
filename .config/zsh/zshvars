@@ -3,7 +3,7 @@ export VISUAL="${EDITOR}"
 # export TERM='terminator' # Not specifying TERM fixes nvim cursors under root. Tested in \
 # terminator and ghostty
 # export TERMINAL='terminator'
-export BROWSER='brave'
+export BROWSER='firefox'
 
 export HISTORY_IGNORE="(ls|lsd|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 

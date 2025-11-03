@@ -14,7 +14,6 @@ alias cdman='cd ~/My/Manuals'
 alias cdnotes='cd ~/My/Notes'
 alias cdh='cd ~/My/LinuxDocs/HackTheBox'
 alias cdt='cd ~/My/LinuxDocs/TryHackMe'
-alias cdo='cd /opt/$USER'
 
 # Git
 alias got='git'
@@ -115,19 +114,11 @@ alias touchpad-fix='xinput set-prop "ELAN0711:00 04F3:30EB Touchpad" "libinput T
 alias root-snapshot='sudo btrfs subvolume snapshot / /.snapshots/@-$(date +"%Y-%m-%d--%H:%M:%S")' # if not using grub
 alias v='nvim'
 alias sudov='sudo nvim'
-alias code='codium'
 alias yt-mp3="yt-dlp --extract-audio --audio-format mp3 --add-metadata --embed-thumbnail -o \"%(title)s.%(ext)s\"" # Pass YT link in double quotes aka "https://..."
 alias yt-mp3-square="yt-dlp --extract-audio --audio-format mp3 --add-metadata --embed-thumbnail --ppa 'EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'\"'\"'if(gt(ih,iw),iw,ih)'\"':'\"'if(gt(iw,ih),ih,iw)'\"'\"'\"' -o \"%(title)s.%(ext)s\"" # Pass YT link in double quotes aka "https://..."
 alias yt-thumbnail="yt-dlp --skip-download --write-thumbnail --convert-thumbnails png -o \"%(title)s.%(ext)s\""
 alias yt-ordered-playlist="yt-dlp -o \"%(playlist_index)s %(title)s.%(ext)s\""
 alias cw="swww img --transition-type random"
-
-# Change wallpaper and apply color scheme system-wide
-cwtheme() {
-  swww img --transition-type random "$1"
-  matugen -t scheme-content image "$1"
-  wallust run "$1"
-}
 
 ## VirusTotal
 alias vts='vt scan file'
