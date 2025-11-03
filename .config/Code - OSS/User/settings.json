@@ -1,0 +1,9 @@
+{
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.emptyWindow": false,
+    "security.workspace.trust.enabled": false,
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "editor.fontFamily": "'Hack', 'monospace', monospace",
+    "editor.rulers": [80, 120]
+}
