@@ -2,7 +2,7 @@
 BackgroundNormal=#2E2E2E
 
 [Icons]
-Theme=Tela-circle-dracula
+Theme=Tela-circle-dracula-dark
 
 [KDE]
 widgetStyle=qt6ct-style
