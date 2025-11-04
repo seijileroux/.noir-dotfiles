@@ -1,9 +1,9 @@
 @import url("themes/catppuccin-macchiato.css");
 
 * {
-  font-family: "Hack";
-  font-size: 10pt;
-  font-weight: 700;
+  font-family: "Hack Nerd Font";
+  font-size: 12pt;
+  font-weight: 900;
   margin: 0;
   padding: 0;
   transition-property: background-color;
@@ -21,7 +21,7 @@
 
 /* The whole bar */
 #waybar {
-  background-color: @surface0;
+  background-color: @crust;
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -47,7 +47,7 @@
   margin: 0;
   padding: 0 10px;
   color: @text;
-  background-color: @surface0;
+  background-color: @crust;
   border-style: solid;
   border-color: @color2;
   border-radius: 7px;
@@ -122,12 +122,12 @@
 
 #custom-power-menu {
   border-radius: 9.5px;
-  background-color: @surface0;
+  background-color: @crust;
   border-radius: 7.5px;
 }
 
 label:focus {
-  background-color: @surface0;
+  background-color: @crust;
 }
 
 @keyframes blink {

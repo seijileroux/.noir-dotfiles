@@ -5,7 +5,7 @@
   "margin-bottom": 0,
   "margin-left": 0,
   "margin-right": 0,
-  "spacing": 8, // Gaps between modules (8px)
+  "spacing": 4, // Gaps between modules (4px)
 
   "modules-left": [
     "clock#date",
@@ -27,9 +27,8 @@
     // "battery"
   ],
 
-
   "clock#date": {
-    "format": "🕙 {:%H:%M  📅 %d-%m %a}", // Icon: calendar-alt
+    "format": " {:%H:%M  %d-%m %a}", // Icon: calendar-alt
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "year",
@@ -37,17 +36,17 @@
       "weeks-pos": "right",
       "on-scroll": 1,
       "format": {
-        "months": "<span color='#eebebe'><b>{}</b></span>",
-        "days": "<span color='#ffe6ff'><b>{}</b></span>",
-        "weeks": "<span color='#c6a0f6'><b>W{}</b></span>",
-        "weekdays": "<span color='#eebebe'><b>{}</b></span>",
+        "months": "<span color='#a6da95'><b>{}</b></span>",
+        "days": "<span color='#cad3f5'><b>{}</b></span>",
+        "weeks": "<span color='#f5a97f'><b>W{}</b></span>",
+        "weekdays": "<span color='#a6da95'><b>{}</b></span>",
         "today": "<span color='#ed8796'><b><u>{}</u></b></span>"
       }
     },
     "justify": "center"
   },
   "hyprland/language": {
-    "format": "{short}",
+    "format": "{shortDescription}",
   },
   "wireplumber": {
     "on-click": "pavucontrol",
@@ -65,14 +64,18 @@
       "phone": " ",
       "portable": " ",
       "car": " ",
-      "default": "🔊"
+      "default": " "
       // "default": [" ", " ", " "]
     },
     "justify": "center"
   },
   "tray": {
-    "icon-size": 15,
-    "spacing": 10
+    "icon-size": 18,
+    "spacing": 10,
+    "icons": {
+      "nm-applet": "/home/hope/.config/waybar/icons/nm-applet.png",
+      "blueman": "/home/hope/.config/waybar/icons/blueman.png"
+    }
   },
 
   "hyprland/workspaces": {
@@ -98,7 +101,7 @@
   },
 
   "cpu": {
-    "format": "💻 {usage}% {max_frequency:0.1f}GHz",
+    "format": " {usage}% {max_frequency:0.1f}GHz",
     "on-click": "ghostty -e btop",
     "interval": 3,
     //"max-length": 14,
@@ -107,7 +110,7 @@
     "tooltip": false
   },
   "memory": {
-    "format": "🐏 {used:0.1f}G {swapUsed:0.1f}G",
+    "format": " {used:0.1f}G {swapUsed:0.1f}G",
     "interval": 3,
     "justify": "center",
     "tooltip": false
@@ -121,8 +124,8 @@
     "tooltip": false
   },
   "custom/storage": {
-    "format": "💾 {}G",
-    "format-alt": "💾 {percentage}%",
+    "format": " {}G",
+    "format-alt": " {percentage}%",
     "format-alt-click": "click",
     "return-type": "json",
     "interval": 60,
@@ -172,10 +175,10 @@
     ],
     "justify": "center"
   },
-  // "custom/power": {
-  //   "format": "",
-  //   "tooltip": false,
-  //   "on-click": "wlogout",
-  //   "justify": "center"
-  // }
+  "custom/power": {
+    "format": "  ",
+    "tooltip": false,
+    "on-click": "wlogout -b 5 -T 350 -B 350",
+    "justify": "center"
+  }
 }
