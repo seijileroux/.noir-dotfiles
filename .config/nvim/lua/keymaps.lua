@@ -62,9 +62,14 @@ map("n", "<leader>fo", "<cmd>copen<CR>", { desc = "Open Quickfix window" })
 map("n", "<leader>fc", "<cmd>cclose<CR>", { desc = "Close Quickfix window" })
 map("n", "<C-n>", "<cmd>cnext<CR>", { desc = "Move to next Quickfix entry" })
 map("n", "<C-p>", "<cmd>cprev<CR>", { desc = "Move to prev Quickfix entry" })
+
 -- Diagnostic keymaps
 -- map("n", "<leader>fd", vim.diagnostic.setloclist, { desc = "Open [D]iagnostic Quick[F]ix list" })
 map("n", "<leader>fd", vim.diagnostic.setqflist, { desc = "Open [D]iagnostic Quick[F]ix list" })
+map("n", "<leader>diaf", vim.diagnostic.open_float)
+map("n", "<leader>diap", vim.diagnostic.goto_prev)
+map("n", "<leader>dian", vim.diagnostic.goto_next)
+map("n", "<leader>diat", "<cmd>Telescope diagnostics<cr>")
 
 -- terminal
 -- local job_id = 0
