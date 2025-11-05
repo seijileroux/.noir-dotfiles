@@ -155,13 +155,14 @@ configuration {
 
 window {
   location:      center;
+  height:        450;
   width:         800;
   y-offset:      -20;
   border-radius: 8px;
 
   border:           2px;
   border-color:     @mauve;
-  background-color: @mantle;
+  background-image: url("background.jpg");
 }
 
 mainbox {
@@ -223,7 +224,7 @@ element normal active {
 }
 
 element selected normal, element selected active {
-  background-color: @lavender;
+  background-color: rgba(183, 189, 248, 0.7);
   text-color: @crust;
 }
 
