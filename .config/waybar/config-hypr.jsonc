@@ -125,7 +125,7 @@
     "tooltip": false
   },
   "custom/storage": {
-    "format": " {}G",
+    "format": " {}g",
     "format-alt": " {percentage}%",
     "format-alt-click": "click",
     "return-type": "json",
