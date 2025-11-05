@@ -2,13 +2,16 @@
 PreviewSize=16
 
 [DetailsMode]
-PreviewSize=16
+PreviewSize=22
 RightPadding=0
 
 [General]
 CloseActiveSplitView=false
 Version=202
 ViewPropsTimestamp=2025,6,6,3,41,19.074
+
+[IconsMode]
+PreviewSize=80
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
