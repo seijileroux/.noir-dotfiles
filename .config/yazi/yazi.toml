@@ -1,0 +1,22 @@
+[mgr]
+ratio = [2, 3, 3]
+sort_by = "extension"
+sort_dir_first = true
+linemode = "size_and_mtime"
+show_hidden = true
+show_symlink = true
+
+[preview]
+wrap = "yes"
+tab_size = 2
+
+[opener]
+play = [
+  { run = 'mpv "$@"', orphan = true, for = "unix" },
+]
+edit = [
+  { run = '$EDITOR "$@"', block = true, for = "unix" },
+]
+open = [
+  { run = 'xdg-open "$@"', desc = "Open" },
+]
