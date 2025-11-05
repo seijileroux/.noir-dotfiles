@@ -80,7 +80,7 @@
 
   "hyprland/workspaces": {
     "all-outputs": true,
-    "format": "{}",
+    "format": "<sub>{icon}</sub>\n{windows}",
     "format-icons": {
       "1": "一",
       "2": "二",
@@ -97,6 +97,7 @@
     //"on-scroll-down": "hyprctl dispatch workspace e-1 1>/dev/null",
     "sort-by-number": true,
     "active-only": false,
+    "hide-active": false,
     "justify": "center",
   },
 
