@@ -80,7 +80,7 @@
 
   "hyprland/workspaces": {
     "all-outputs": true,
-    "format": "<sub>{icon}</sub>\n{windows}",
+    "format": "<sub>{icon}</sub>",
     "format-icons": {
       "1": "一",
       "2": "二",
