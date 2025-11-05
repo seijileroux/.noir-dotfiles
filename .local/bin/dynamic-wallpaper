@@ -1,0 +1,11 @@
+#!/bin/sh
+
+handle() {
+  case $1 in
+  workspace*)
+    swww img --transition-type fade --transition-fps 30 --transition-step 250 $(ls $HOME/.local/share/backgrounds/arcane/* | shuf -n 1)
+    ;;
+  esac
+}
+
+socat -U - UNIX-CONNECT:$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock | while read -r line; do handle "$line"; done
