@@ -1,0 +1,11 @@
+/* ⚠️ REQUIRED: DO NOT REMOVE - Enables XUL namespace for Firefox UI styling */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Target empty label bookmark with URL containing github.com and use github.png icon in same folder */
+.bookmark-item[label="GitHub"] {
+  list-style: url("./icons/github.png") !important;
+}
+
+.bookmark-item[label="GitHub"] > .toolbarbutton-text {
+  display: none !important;
+}
