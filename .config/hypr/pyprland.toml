@@ -14,8 +14,8 @@ plugins = [
 
 [scratchpads.term]
 animation = "fromTop"
-command = "ghostty"
-class = "com.mitchellh.ghostty"
+command = "alacritty"
+class = "Alacritty"
 size = "90% 90%"
 # max_size = "1920px 100%"
 lazy = true
