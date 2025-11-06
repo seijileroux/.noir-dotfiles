@@ -8,7 +8,7 @@ vim.opt.mouse = "a"
 vim.opt.showmode = true
 
 vim.opt.wrap = false
-vim.opt.virtualedit = "block"
+vim.opt.virtualedit = "all"
 
 -- Sync clipboard between OS and Neovim.
 vim.schedule(function()
