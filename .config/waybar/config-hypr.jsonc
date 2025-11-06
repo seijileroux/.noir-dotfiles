@@ -11,6 +11,7 @@
     "clock#date",
     "hyprland/language",
     "wireplumber",
+    "bluetooth",
     "tray"
   ],
   "modules-center": [
@@ -69,13 +70,23 @@
     },
     "justify": "center"
   },
+  "bluetooth": {
+    // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+    "format": " {status}",
+    "format-disabled": "", // an empty format will hide the module
+    "format-connected": " {num_connections} connected",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "on-click": "rofi-bluetooth"
+  },
   "tray": {
     "icon-size": 18,
     "spacing": 10,
-    "icons": {
-      "nm-applet": "/home/hope/.config/waybar/icons/nm-applet.png",
-      "blueman": "/home/hope/.config/waybar/icons/blueman.png"
-    }
+    // "icons": {
+    //   "nm-applet": "/home/hope/.config/waybar/icons/nm-applet.png",
+    //   "blueman": "/home/hope/.config/waybar/icons/blueman.png"
+    // }
   },
 
   "hyprland/workspaces": {
@@ -139,7 +150,7 @@
     "interval": 3,
     "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
     "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon/hwmon6",
-		"input-filename": "temp1_input",
+    "input-filename": "temp1_input",
     "critical-threshold": 80,
     "format-critical": " {temperatureC}°C",
     "format": "{icon} {temperatureC}°C",
@@ -179,7 +190,8 @@
   "custom/power": {
     "format": "  ",
     "tooltip": false,
-    "on-click": "wlogout -b 5 -T 350 -B 350",
+    // "on-click": "wlogout -b 5 -T 350 -B 350",
+    "on-click": "~/.local/bin/rofi-power",
     "justify": "center"
   }
 }
