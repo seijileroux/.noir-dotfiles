@@ -223,6 +223,8 @@ return {
             debounce_text_changes = 150,
           },
           filetypes = {
+            "html",
+            "css",
             "javascript",
             "javascriptreact",
             "javascript.jsx",
