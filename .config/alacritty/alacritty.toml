@@ -1,0 +1,51 @@
+[general]
+import = [
+  "./catppuccin-macchiato.toml"
+]
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+padding = { x = 10, y = 10 }
+opacity = 0.6
+blur = true
+
+[scrolling]
+
+[font]
+normal = { family = "Hack Nerd Font", style = "Regular" }
+bold = { family = "Hack Nerd Font", style = "Bold" }
+italic = { family = "Hack Nerd Font", style = "Italic" }
+bold_italic = { family = "Hack Nerd Font", style = "Bold Italic" }
+size = 16.0
+
+[bell]
+duration = 200
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_interval = 750
+blink_timeout = 5
+thickness = 0.2
+
+[terminal]
+shell = "/bin/zsh"
+osc52 = "CopyPaste"
+
+[mouse]
+
+[keyboard]
+bindings = [
+  { key = "T", mods = "Control", action = "CreateNewWindow" },
+  { key = "T", mods = "Alt", action = "CreateNewWindow" },
+  { key = "V", mods = "Control", action = "Paste" },
+  { key = "C", mods = "Control", action = "Copy" },
+]
+
+[hints]
