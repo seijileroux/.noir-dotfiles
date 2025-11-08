@@ -217,7 +217,7 @@ show_idle_bar_heads = 1
 
 [color]
 
-theme = 'matugen'
+theme = 'macchiato-transparent'
 
 # Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
 # Or defined by hex code '#xxxxxx' (hex code must be within ''). User defined colors requires
