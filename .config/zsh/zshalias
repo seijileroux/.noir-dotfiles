@@ -68,15 +68,28 @@ alias ns='npm start'
 alias ys='yarn start'
 
 # Pacman
-alias aptu='paru -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
-alias apti='paru -Sy --needed --disable-download-timeout' # install packages
-alias apts='paru --bottomup --disable-download-timeout' # search for a package (intersection of all words if multiple suplied). Promts to install a package as well
-alias aptsg='paru -Sg' # lookup all packages belonging to a group
-alias aptr='paru -Rnusc --noconfirm' # remove packages with all dependencies and packages that depend on the current one
-alias aptq='paru -Q | rg' # search among installed packages
-alias aptqq='paru -Qq | rg' # search among installed packages without package versions
-alias aptrq='paru -R $(paru -Qdtq)' # remove all packages that don't depend on any other
-alias aptsc='paru -Scc' # Clean cache and databases
+# alias aptu='paru -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
+# alias apti='paru -Sy --needed --disable-download-timeout' # install packages
+# alias apts='paru --bottomup --disable-download-timeout' # search for a package (intersection of all words if multiple suplied). Promts to install a package as well
+# alias aptsg='paru -Sg' # lookup all packages belonging to a group
+# alias aptr='paru -Rns --noconfirm' # remove packages
+# alias aptrr='paru -Rnusc --noconfirm' # remove packages with all dependencies and packages that depend on the current one
+# alias aptq='paru -Q | rg' # search among installed packages
+# alias aptqq='paru -Qq | rg' # search among installed packages without package versions
+# alias aptrq='paru -R $(paru -Qdtq)' # remove all packages that don't depend on any other
+# alias aptsc='paru -Scc' # Clean cache and databases
+# alias aptfix='sudo rm /var/lib/pacman/db.lck' # Removes pacman lock
+
+alias aptu='sudo pacman -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
+alias apti='sudo pacman -Sy --needed --disable-download-timeout' # install packages
+alias apts='pacman -Ss --disable-download-timeout' # search for a package (intersection of all words if multiple suplied). Promts to install a package as well
+alias aptsg='pacman -Sg' # lookup all packages belonging to a group
+alias aptr='sudo pacman -Rns --noconfirm' # remove packages
+alias aptrr='sudo pacman -Rnusc --noconfirm' # remove packages with all dependencies and packages that depend on the current one
+alias aptq='pacman -Q | rg' # search among installed packages
+alias aptqq='pacman -Qq | rg' # search among installed packages without package versions
+alias aptrq='sudo pacman -R $(pacman -Qdtq)' # remove all packages that don't depend on any other
+alias aptsc='sudo pacman -Scc' # Clean cache and databases
 alias aptfix='sudo rm /var/lib/pacman/db.lck' # Removes pacman lock
 
 # DNF 5
