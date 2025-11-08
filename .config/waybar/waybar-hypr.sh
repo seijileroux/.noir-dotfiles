@@ -7,4 +7,4 @@ killall -q waybar
 while pgrep -x waybar >/dev/null; do sleep 1; done
 
 # Launch main
-waybar -c ~/.config/waybar/config-hypr.jsonc -s ~/.config/waybar/style-hypr.css &> /dev/null & disown
+waybar -c ~/.config/waybar/config-hypr.jsonc -s ~/.config/waybar/style.css &> /dev/null & disown

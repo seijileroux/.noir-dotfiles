@@ -128,7 +128,7 @@
     "tooltip": false
   },
   "custom/gpu": {
-    "exec": "~/.config/waybar/modules/gpu-niri.sh",
+    "exec": "~/.config/waybar/modules/gpu.sh",
     "format": "<span color=\"#ffe6ff\">{}</span>",
     "return-type": "json",
     "interval": 3,

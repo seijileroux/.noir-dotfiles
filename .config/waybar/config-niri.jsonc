@@ -1,16 +1,17 @@
 {
   "layer": "bottom",
   "position": "top",
-  "margin-top": 4,
+  "margin-top": 0,
   "margin-bottom": 0,
-  "margin-left": 10,
-  "margin-right": 10,
-  "spacing": 8, // Gaps between modules (8px)
+  "margin-left": 0,
+  "margin-right": 0,
+  "spacing": 4, // Gaps between modules (4px)
 
   "modules-left": [
     "clock#date",
     "niri/language",
     "wireplumber",
+    "bluetooth",
     "tray"
   ],
   "modules-center": [
@@ -21,15 +22,14 @@
     "memory",
     "custom/gpu",
     "custom/storage",
-    "temperature",
+    // "temperature",
     "backlight",
     "custom/power"
     // "battery"
   ],
 
-
   "clock#date": {
-    "format": "🕙 {:%H:%M  📅 %d-%m %a}", // Icon: calendar-alt
+    "format": " {:%H:%M  %d-%m %a}", // Icon: calendar-alt
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "year",
@@ -37,17 +37,17 @@
       "weeks-pos": "right",
       "on-scroll": 1,
       "format": {
-        "months": "<span color='#eebebe'><b>{}</b></span>",
-        "days": "<span color='#ffe6ff'><b>{}</b></span>",
-        "weeks": "<span color='#c6a0f6'><b>W{}</b></span>",
-        "weekdays": "<span color='#eebebe'><b>{}</b></span>",
+        "months": "<span color='#a6da95'><b>{}</b></span>",
+        "days": "<span color='#cad3f5'><b>{}</b></span>",
+        "weeks": "<span color='#f5a97f'><b>W{}</b></span>",
+        "weekdays": "<span color='#a6da95'><b>{}</b></span>",
         "today": "<span color='#ed8796'><b><u>{}</u></b></span>"
       }
     },
     "justify": "center"
   },
   "niri/language": {
-    "format": "{short}",
+    "format": "{shortDescription}",
   },
   "wireplumber": {
     "on-click": "pavucontrol",
@@ -66,18 +66,32 @@
       "portable": " ",
       "car": " ",
       "default": " "
-      //"default": [" ", " ", " "]
+      // "default": [" ", " ", " "]
     },
     "justify": "center"
   },
+  "bluetooth": {
+    // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+    "format": " {status}",
+    "format-disabled": "", // an empty format will hide the module
+    "format-connected": " {num_connections} connected",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "on-click": "rofi-bluetooth"
+  },
   "tray": {
-    "icon-size": 15,
-    "spacing": 10
+    "icon-size": 18,
+    "spacing": 10,
+    // "icons": {
+    //   "nm-applet": "/home/hope/.config/waybar/icons/nm-applet.png",
+    //   "blueman": "/home/hope/.config/waybar/icons/blueman.png"
+    // }
   },
 
   "niri/workspaces": {
     "all-outputs": true,
-    "format": "{}",
+    "format": "<sub>{icon}</sub>",
     "format-icons": {
       "1": "一",
       "2": "二",
@@ -94,11 +108,12 @@
     //"on-scroll-down": "hyprctl dispatch workspace e-1 1>/dev/null",
     "sort-by-number": true,
     "active-only": false,
+    "hide-active": false,
     "justify": "center",
   },
 
   "cpu": {
-    "format": "💻 {usage}% {max_frequency:0.1f}GHz",
+    "format": " {usage}% {max_frequency:0.1f}GHz",
     "on-click": "ghostty -e btop",
     "interval": 3,
     //"max-length": 14,
@@ -107,13 +122,13 @@
     "tooltip": false
   },
   "memory": {
-    "format": "🐏 {used:0.1f}G {swapUsed:0.1f}G",
+    "format": " {used:0.1f}G {swapUsed:0.1f}G",
     "interval": 3,
     "justify": "center",
     "tooltip": false
   },
   "custom/gpu": {
-    "exec": "~/.config/waybar/modules/gpu-niri.sh",
+    "exec": "~/.config/waybar/modules/gpu.sh",
     "format": "<span color=\"#ffe6ff\">{}</span>",
     "return-type": "json",
     "interval": 3,
@@ -121,8 +136,8 @@
     "tooltip": false
   },
   "custom/storage": {
-    "format": "💾 {}G",
-    "format-alt": "💾 {percentage}%",
+    "format": " {}g",
+    "format-alt": " {percentage}%",
     "format-alt-click": "click",
     "return-type": "json",
     "interval": 60,
@@ -133,8 +148,9 @@
   "temperature": {
     "thermal-zone": 1,
     "interval": 3,
+    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
     "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon/hwmon6",
-		"input-filename": "temp1_input",
+    "input-filename": "temp1_input",
     "critical-threshold": 80,
     "format-critical": " {temperatureC}°C",
     "format": "{icon} {temperatureC}°C",
@@ -171,10 +187,11 @@
     ],
     "justify": "center"
   },
-  // "custom/power": {
-  //   "format": "",
-  //   "tooltip": false,
-  //   "on-click": "wlogout",
-  //   "justify": "center"
-  // }
+  "custom/power": {
+    "format": "  ",
+    "tooltip": false,
+    // "on-click": "wlogout -b 5 -T 350 -B 350",
+    "on-click": "~/.local/bin/rofi-power",
+    "justify": "center"
+  }
 }
