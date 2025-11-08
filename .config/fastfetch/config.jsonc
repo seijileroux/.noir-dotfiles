@@ -33,12 +33,6 @@
     },
     {
       "type": "cpu",
-      "key": "Temperature",
-      "temp": true,
-      "format": "{temperature}"
-    },
-    {
-      "type": "cpu",
       "key": "CPU",
       "format": "{cores-logical} x {name}"
     },
