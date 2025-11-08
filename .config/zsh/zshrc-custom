@@ -90,14 +90,15 @@ setopt hist_find_no_dups
 ###############################################################################
 #                              ZSH COOL OPTIONS                               #
 ###############################################################################
-setopt AUTOCD              # change directory just by typing its name
-setopt PROMPT_SUBST        # enable command substitution in prompt
-setopt MENU_COMPLETE       # Automatically highlight first element of completion menu
-# setopt LIST_PACKED		     # The completion menu takes less space.
-# setopt AUTO_LIST           # Automatically list choices on ambiguous completion.
-# setopt HIST_IGNORE_DUPS	   # Do not write events to history that are duplicates of previous events
-# setopt HIST_FIND_NO_DUPS   # When searching history don't display results already cycled through twice
-setopt COMPLETE_IN_WORD    # Complete from both ends of a word.
+setopt AUTOCD                 # change directory just by typing its name
+setopt PROMPT_SUBST           # enable command substitution in prompt
+setopt MENU_COMPLETE          # Automatically highlight first element of completion menu
+# setopt LIST_PACKED          # The completion menu takes less space.
+# setopt AUTO_LIST            # Automatically list choices on ambiguous completion.
+# setopt HIST_IGNORE_DUPS     # Do not write events to history that are duplicates of previous events
+# setopt HIST_FIND_NO_DUPS    # When searching history don't display results already cycled through twice
+setopt COMPLETE_IN_WORD       # Complete from both ends of a word.
+setopt NULL_GLOB              # Make * wildcard work like in bash
 
 # Keybindings
 bindkey -e # Switch to emacs style keybinds
@@ -193,17 +194,17 @@ function y() {
 ## PS1='%B%F{blue}%f%b  %B%F{magenta}%n%f%b $(dir_icon)  %B%F{red}%~%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
 
 ## Manjaro Prompt
-#	# Use powerline
-#	USE_POWERLINE="true"
-#	# Has weird character width
-#	# Example:
-#	#    is not a diamond
-#	HAS_WIDECHARS="false"
-#	# Source manjaro-zsh-configuration
-#	if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
-#	  source /usr/share/zsh/manjaro-zsh-config
-#	fi
-#	# Use manjaro zsh prompt
-#	if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-#	  source /usr/share/zsh/manjaro-zsh-prompt
-#	fi
+# # Use powerline
+# USE_POWERLINE="true"
+# # Has weird character width
+# # Example:
+# #    is not a diamond
+# HAS_WIDECHARS="false"
+# # Source manjaro-zsh-configuration
+# if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
+#   source /usr/share/zsh/manjaro-zsh-config
+# fi
+# # Use manjaro zsh prompt
+# if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
+#   source /usr/share/zsh/manjaro-zsh-prompt
+# fi
