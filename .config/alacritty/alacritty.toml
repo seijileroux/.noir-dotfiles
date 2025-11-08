@@ -10,7 +10,8 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
 padding = { x = 10, y = 10 }
-opacity = 0.6
+# opacity = 0.6
+opacity = 1.0
 blur = true
 
 [scrolling]
