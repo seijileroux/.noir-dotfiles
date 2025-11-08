@@ -62,7 +62,9 @@ alias lz='lazygit'
 alias nom='npm'
 alias nim='npm'
 
+alias ncr='npm create-react-app'
 alias ns='npm start'
+
 alias ys='yarn start'
 
 # Pacman
