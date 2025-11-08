@@ -24,7 +24,7 @@ bold_italic = { family = "Hack Nerd Font", style = "Bold Italic" }
 size = 16.0
 
 [bell]
-duration = 200
+duration = 0
 
 [selection]
 save_to_clipboard = true
