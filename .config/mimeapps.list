@@ -1,6 +1,7 @@
 [Added Associations]
 application/epub+zip=com.github.johnfactotum.Foliate.desktop;
 application/pdf=org.kde.okular.desktop;
+application/vnd.comicbook+zip=mcomix.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 application/x-extension-htm=firefox.desktop;
 application/x-extension-html=firefox.desktop;
@@ -30,6 +31,7 @@ x-scheme-handler/https=firefox.desktop;
 [Default Applications]
 application/epub+zip=com.github.johnfactotum.Foliate.desktop;
 application/pdf=org.kde.okular.desktop;
+application/vnd.comicbook+zip=mcomix.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 application/x-extension-htm=firefox.desktop
 application/x-extension-html=firefox.desktop
