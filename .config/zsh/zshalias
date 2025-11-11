@@ -2,9 +2,9 @@
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias cdd='cd ~/Downloads'
+alias cda='cd ~/AI_Tools'
+alias cdcomfy='cd ~/AI_Tools/ComfyUI'
 alias cdc='cd ~/Code'
-alias cda='cd ~/Code/ai'
-alias cdcomfy='cd ~/Code/ai/ComfyUI'
 alias cds='cd ~/Code/sideprojects'
 alias cdp='cd ~/Code/pydev'
 alias cdr='cd ~/Code/rustdev'
@@ -64,33 +64,38 @@ alias nim='npm'
 
 alias ncr='npm create-react-app'
 alias ns='npm start'
+alias nrd='npm run dev'
 
 alias ys='yarn start'
 
-# Pacman
-# alias aptu='paru -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
-# alias apti='paru -Sy --needed --disable-download-timeout' # install packages
-# alias apts='paru --bottomup --disable-download-timeout' # search for a package (intersection of all words if multiple suplied). Promts to install a package as well
-# alias aptsg='paru -Sg' # lookup all packages belonging to a group
-# alias aptr='paru -Rns --noconfirm' # remove packages
-# alias aptrr='paru -Rnusc --noconfirm' # remove packages with all dependencies and packages that depend on the current one
-# alias aptq='paru -Q | rg' # search among installed packages
-# alias aptqq='paru -Qq | rg' # search among installed packages without package versions
-# alias aptrq='paru -R $(paru -Qdtq)' # remove all packages that don't depend on any other
-# alias aptsc='paru -Scc' # Clean cache and databases
-# alias aptfix='sudo rm /var/lib/pacman/db.lck' # Removes pacman lock
+alias pns='pnpm start'
+alias pnrd='pnpm run dev'
+alias pnrb='pnpm run build'
 
-alias aptu='sudo pacman -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
-alias apti='sudo pacman -Sy --needed --disable-download-timeout' # install packages
-alias apts='pacman -Ss --disable-download-timeout' # search for a package (intersection of all words if multiple suplied). Promts to install a package as well
-alias aptsg='pacman -Sg' # lookup all packages belonging to a group
-alias aptr='sudo pacman -Rns --noconfirm' # remove packages
-alias aptrr='sudo pacman -Rnusc --noconfirm' # remove packages with all dependencies and packages that depend on the current one
-alias aptq='pacman -Q | rg' # search among installed packages
-alias aptqq='pacman -Qq | rg' # search among installed packages without package versions
-alias aptrq='sudo pacman -R $(pacman -Qdtq)' # remove all packages that don't depend on any other
-alias aptsc='sudo pacman -Scc' # Clean cache and databases
+# Pacman
+alias aptu='paru -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
+alias apti='paru -Sy --needed --disable-download-timeout' # install packages
+alias apts='paru --bottomup --disable-download-timeout' # search for a package (intersection of all words if multiple suplied). Promts to install a package as well
+alias aptsg='paru -Sg' # lookup all packages belonging to a group
+alias aptr='paru -Rns --noconfirm' # remove packages
+alias aptrr='paru -Rnusc --noconfirm' # remove packages with all dependencies and packages that depend on the current one
+alias aptq='paru -Q | rg' # search among installed packages
+alias aptqq='paru -Qq | rg' # search among installed packages without package versions
+alias aptrq='paru -R $(paru -Qdtq)' # remove all packages that don't depend on any other
+alias aptsc='paru -Scc' # Clean cache and databases
 alias aptfix='sudo rm /var/lib/pacman/db.lck' # Removes pacman lock
+
+# alias aptu='sudo pacman -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
+# alias apti='sudo pacman -Sy --needed --disable-download-timeout' # install packages
+# alias apts='pacman -Ss --disable-download-timeout' # search for a package (intersection of all words if multiple suplied). Promts to install a package as well
+# alias aptsg='pacman -Sg' # lookup all packages belonging to a group
+# alias aptr='sudo pacman -Rns --noconfirm' # remove packages
+# alias aptrr='sudo pacman -Rnusc --noconfirm' # remove packages with all dependencies and packages that depend on the current one
+# alias aptq='pacman -Q | rg' # search among installed packages
+# alias aptqq='pacman -Qq | rg' # search among installed packages without package versions
+# alias aptrq='sudo pacman -R $(pacman -Qdtq)' # remove all packages that don't depend on any other
+# alias aptsc='sudo pacman -Scc' # Clean cache and databases
+# alias aptfix='sudo rm /var/lib/pacman/db.lck' # Removes pacman lock
 
 # DNF 5
 # alias aptu='sudo dnf upgrade' # upgrade all packages on the system to the latest version (if particular package name supplie, only thta package will be upgraded)
@@ -134,6 +139,7 @@ alias yt-mp3-square="yt-dlp --extract-audio --audio-format mp3 --add-metadata --
 alias yt-thumbnail="yt-dlp --skip-download --write-thumbnail --convert-thumbnails png -o \"%(title)s.%(ext)s\""
 alias yt-ordered-playlist="yt-dlp -o \"%(playlist_index)s %(title)s.%(ext)s\""
 alias cw="swww img --transition-type random"
+alias jinx='ollama run Jinx'
 
 ## VirusTotal
 alias vts='vt scan file'
