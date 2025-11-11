@@ -26,7 +26,7 @@
 |                   |                                                                                                                              |                                                     |                                               |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------- |
 | WM                | [Hyprland](https://github.com/hyprwm/Hyprland)                                                                               | [Niri](https://github.com/YaLTeR/niri)              | [i3](https://github.com/i3/i3)                |
-| Bar               | [Waybar](https://github.com/Alexays/Waybar)                                                                                  |                                                     |                                               |
+| Bar               | [Waybar](https://github.com/Alexays/Waybar)                                                                                  |                                                     | [Polybar](https://github.com/polybar/polybar) |
 | File Manager      | [Yazi](https://github.com/sxyazi/yazi)                                                                                       | [Dolphin](https://github.com/KDE/dolphin)           | [Thunar](https://gitlab.xfce.org/xfce/thunar) |
 | Music Player      | [RMPC](https://github.com/mierak/rmpc) + [MPD](https://github.com/MusicPlayerDaemon/MPD)                                     |                                                     |                                               |
 | Editor            | [Neovim](https://github.com/neovim/neovim)                                                                                   | [VSCode](https://github.com/microsoft/vscode)       |                                               |
@@ -37,7 +37,7 @@
 | Wallpapers        | [Link](https://github.com/somanoir/noir-wallpapers)                                                                          |                                                     |                                               |
 | Font              | [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file)                                                 |                                                     |                                               |
 | App Theme         | [Catppuccin](https://github.com/catppuccin/catppuccin)                                                                       |                                                     |                                               |
-| Cursor            | [Bibata](https://github.com/ful1e5/Bibata_Cursor)                                                                            |                                                     |                                               |
+| Cursor Theme      | [Bibata](https://github.com/ful1e5/Bibata_Cursor)                                                                            |                                                     |                                               |
 | Icon Theme        | [Tela-circle](https://github.com/vinceliuice/Tela-circle-icon-theme)                                                         |                                                     |                                               |
 
 # Installation
