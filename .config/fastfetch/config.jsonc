@@ -6,7 +6,7 @@
     "height": 12,
     "padding": {
       "top": 1,
-      "left": 4,
+      "left":2,
       "right": 4
     },
     "preserveAspectRatio": true
