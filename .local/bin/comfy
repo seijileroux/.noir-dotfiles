@@ -1,21 +1,24 @@
 #!/bin/bash
 
 install_dependencies() {
-    local dir="$1"
+  local dir="$1"
 
-    # Change into the directory
-    cd "$dir" || { echo "Failed to enter $dir"; exit 1; }
+  # Change into the directory
+  cd "$dir" || {
+    echo "Failed to enter $dir"
+    exit 1
+  }
 
-    # Check if 'ppir' command is available and execute it
-    if command -v `uv pip install -r requirements.txt` &> /dev/null; then
-        echo "Executing ppir in $dir..."
-        uv pip install -r requirements.txt
-    else
-        echo "'uv pip install -r requirements.txt' command not found in $dir."
-    fi
+  # Check if 'ppir' command is available and execute it
+  if command -v $(uv pip install -r requirements.txt) &>/dev/null; then
+    echo "Executing ppir in $dir..."
+    uv pip install -r requirements.txt
+  else
+    echo "'uv pip install -r requirements.txt' command not found in $dir."
+  fi
 }
 
-source ~/Code/ai/ComfyUI/.venv/bin/activate
+source ~/AI_Tools/ComfyUI/.venv/bin/activate
 
 # for dir in ~/Code/ai/ComfyUI/custom_nodes/*; do
 #     if [ -d "$dir" ]; then  # Ensure it's a directory
@@ -23,4 +26,4 @@ source ~/Code/ai/ComfyUI/.venv/bin/activate
 #     fi
 # done
 
-uv run ~/Code/ai/ComfyUI/main.py --lowvram --disable-smart-memory
+uv run ~/AI_Tools/ComfyUI/main.py --lowvram --disable-smart-memory
