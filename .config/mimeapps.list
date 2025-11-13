@@ -1,7 +1,9 @@
 [Added Associations]
 application/epub+zip=com.github.johnfactotum.Foliate.desktop;
+application/json=code-oss.desktop;
 application/pdf=org.kde.okular.desktop;
 application/vnd.comicbook+zip=mcomix.desktop;
+application/vnd.ms-excel.sheet.macroEnabled.12=libreoffice-calc.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 application/x-extension-htm=firefox.desktop;
 application/x-extension-html=firefox.desktop;
@@ -18,7 +20,7 @@ image/x-xcursor=codium.desktop;
 inode/directory=code-oss.desktop;mpv.desktop;
 text/css=code-oss.desktop;
 text/html=firefox.desktop;
-text/markdown=codium.desktop;
+text/markdown=code-oss.desktop;codium.desktop;
 text/plain=code-oss.desktop;codium.desktop;vscodium.desktop;
 video/mp4=mpv.desktop;
 video/vnd.avi=mpv.desktop;
@@ -30,8 +32,10 @@ x-scheme-handler/https=firefox.desktop;
 
 [Default Applications]
 application/epub+zip=com.github.johnfactotum.Foliate.desktop;
+application/json=code-oss.desktop;
 application/pdf=org.kde.okular.desktop;
 application/vnd.comicbook+zip=mcomix.desktop;
+application/vnd.ms-excel.sheet.macroEnabled.12=libreoffice-calc.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 application/x-extension-htm=firefox.desktop
 application/x-extension-html=firefox.desktop
@@ -48,7 +52,7 @@ image/x-xcursor=codium.desktop;
 inode/directory=code-oss.desktop;
 text/css=code-oss.desktop;
 text/html=firefox.desktop
-text/markdown=codium.desktop;
+text/markdown=code-oss.desktop;
 text/plain=code-oss.desktop;
 video/mp4=mpv.desktop;
 video/vnd.avi=mpv.desktop;
