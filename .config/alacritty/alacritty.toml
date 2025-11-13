@@ -46,7 +46,7 @@ bindings = [
   { key = "T", mods = "Control", action = "CreateNewWindow" },
   { key = "T", mods = "Alt", action = "CreateNewWindow" },
   { key = "V", mods = "Control", action = "Paste" },
-  { key = "C", mods = "Control", action = "Copy" },
+  # { key = "C", mods = "Control", action = "Copy" },
 ]
 
 [hints]
