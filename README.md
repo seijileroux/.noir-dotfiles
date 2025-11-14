@@ -17,6 +17,8 @@
     <img alt="Showcase 2" src="./assets/showcase_2.png" />
     <img alt="Showcase 3" src="./assets/showcase_3.png" />
     <img alt="Showcase 4" src="./assets/showcase_4.png" />
+    <img alt="Showcase 5" src="./assets/showcase_5.png" />
+    <img alt="Showcase 6" src="./assets/showcase_6.png" />
   </div>
 </details>
 
