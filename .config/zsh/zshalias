@@ -2,18 +2,15 @@
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias cdd='cd ~/Downloads'
-alias cda='cd ~/AI_Tools'
-alias cdcomfy='cd ~/AI_Tools/ComfyUI'
-alias cdc='cd ~/Code'
-alias cds='cd ~/Code/sideprojects'
-alias cdp='cd ~/Code/pydev'
-alias cdr='cd ~/Code/rustdev'
-alias cdmy='cd ~/My'
-alias cddot='cd ~/My/Dotfiles'
-alias cdman='cd ~/My/Manuals'
-alias cdnotes='cd ~/My/Notes'
-alias cdh='cd ~/My/LinuxDocs/HackTheBox'
-alias cdt='cd ~/My/LinuxDocs/TryHackMe'
+alias cda='cd ~/Data/AI_Tools'
+alias cdcomfy='cd ~/Data/AI_Tools/ComfyUI'
+alias cdc='cd ~/Data/Code'
+alias cds='cd ~/Data/Code/sideprojects'
+alias cdp='cd ~/Data/Code/pydev'
+alias cdr='cd ~/Data/Code/rustdev'
+alias cdmy='cd ~/Data/My'
+alias cdman='cd ~/Data/My/Manuals'
+alias cdnotes='cd ~/Data/My/Notes'
 
 # Git
 alias got='git'
@@ -68,8 +65,9 @@ alias nrd='npm run dev'
 
 alias ys='yarn start'
 
+alias pnc='npx create-next-app@latest --use-pnpm'
 alias pns='pnpm start'
-alias pnrd='pnpm run dev'
+alias pnrd="NODE_OPTIONS='--no-webstorage' pnpm dev"
 alias pnrb='pnpm run build'
 
 # Pacman
