@@ -19,6 +19,7 @@
   },
   "modules": [
     "break",
+    "break",
     {
       "type": "os",
       "format": "{pretty-name} {version-id} {arch}"
