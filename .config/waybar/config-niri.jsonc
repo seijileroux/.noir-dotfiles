@@ -84,8 +84,8 @@
     "icon-size": 18,
     "spacing": 10,
     // "icons": {
-    //   "nm-applet": "/home/hope/.config/waybar/icons/nm-applet.png",
-    //   "blueman": "/home/hope/.config/waybar/icons/blueman.png"
+    //   "nm-applet": "/home/<user>/.config/waybar/icons/nm-applet.png",
+    //   "blueman": "/home/<user>/.config/waybar/icons/blueman.png"
     // }
   },
 
