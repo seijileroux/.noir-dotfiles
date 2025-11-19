@@ -9,5 +9,12 @@
         80,
         120
     ],
-    "git.openRepositoryInParentFolders": "never"
+    "git.openRepositoryInParentFolders": "never",
+    "continue.model": "ollama",
+    "continue.modelParameters": {
+        "model": "gemma3n:e2b-it-q4_K_M"
+    },
+    "editor.fontSize": 16,
+    "explorer.confirmDelete": false,
+    "deno.enable": true
 }
