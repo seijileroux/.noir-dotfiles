@@ -213,7 +213,14 @@ if [ -d "/sbin" ] ;
   then PATH="/sbin:$PATH"
 fi
 
-
 if [ -d "/var/lib/flatpak/exports/share/applications" ] ;
   then PATH="/var/lib/flatpak/exports/share/applications:$PATH"
 fi
+
+# pnpm
+export PNPM_HOME="/home/hope/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
