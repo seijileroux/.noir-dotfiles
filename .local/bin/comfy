@@ -18,7 +18,10 @@ install_dependencies() {
   fi
 }
 
-source ~/AI_Tools/ComfyUI/.venv/bin/activate
+comfy_dir="$HOME/Data/AI_Tools/ComfyUI"
+
+source "$comfy_dir/.venv/bin/activate"
+cd $comfy_dir
 
 # for dir in ~/Code/ai/ComfyUI/custom_nodes/*; do
 #     if [ -d "$dir" ]; then  # Ensure it's a directory
@@ -26,4 +29,4 @@ source ~/AI_Tools/ComfyUI/.venv/bin/activate
 #     fi
 # done
 
-uv run ~/AI_Tools/ComfyUI/main.py --lowvram --disable-smart-memory
+uv run "$comfy_dir/main.py" --lowvram --disable-smart-memory
