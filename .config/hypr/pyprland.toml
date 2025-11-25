@@ -44,7 +44,7 @@ process_tracking = false
 
 [scratchpads.volume]
 animation = "fromTop"
-command = "pavucontrol"
+command = "pavucontrol -t 3"
 class = "org.pulseaudio.pavucontrol"
 size = "60% 60%"
 position = "20% 20%"
