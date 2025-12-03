@@ -21,3 +21,74 @@
 .bookmark-item[label="YT"] > .toolbarbutton-text {
   display: none !important;
 }
+
+.bookmark-item[label="Tools"] {
+  list-style: url("./icons/tools.png") !important;
+}
+.bookmark-item[label="Tools"] > .toolbarbutton-text {
+  display: none !important;
+}
+
+.bookmark-item[label="Socials"] {
+  list-style: url("./icons/socials.png") !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.bookmark-item[label="Socials"] > .toolbarbutton-text {
+  display: none !important;
+}
+
+.bookmark-item[label="AI"] {
+  list-style: url("./icons/ai.png") !important;
+}
+.bookmark-item[label="AI"] > .toolbarbutton-text {
+  display: none !important;
+}
+
+.bookmark-item[label="Languages"] {
+  list-style: url("./icons/french.png") !important;
+}
+.bookmark-item[label="Languages"] > .toolbarbutton-text {
+  display: none !important;
+}
+
+.bookmark-item[label="Torrents"] {
+  list-style: url("./icons/torrent.png") !important;
+}
+.bookmark-item[label="Torrents"] > .toolbarbutton-text {
+  display: none !important;
+}
+
+.bookmark-item[label="Read Later"] {
+  list-style: url("./icons/snooze.png") !important;
+}
+.bookmark-item[label="Read Later"] > .toolbarbutton-text {
+  display: none !important;
+}
+
+.bookmark-item[label="H"] {
+  list-style: url("./icons/hoodie.png") !important;
+}
+.bookmark-item[label="H"] > .toolbarbutton-text {
+  display: none !important;
+}
+
+.bookmark-item[label="%"] {
+  list-style: url("./icons/clown.png") !important;
+}
+.bookmark-item[label="%"] > .toolbarbutton-text {
+  display: none !important;
+}
+
+.bookmark-item[label="Dev"] {
+  list-style: url("./icons/dev.png") !important;
+}
+.bookmark-item[label="Dev"] > .toolbarbutton-text {
+  display: none !important;
+}
+
+/* Background/text color of dropdown and popup menus */
+menupopup {
+  --panel-background: #232136 !important;
+  --panel-color: #e0def4 !important;
+}
