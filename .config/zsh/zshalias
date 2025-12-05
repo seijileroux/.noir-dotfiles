@@ -70,6 +70,9 @@ alias pns='pnpm start'
 alias pnrd="NODE_OPTIONS='--no-webstorage' pnpm dev"
 alias pnrb='pnpm run build'
 
+alias denc='deno run -A npm:create-next-app@latest'
+alias dens='deno task dev'
+
 # Pacman
 alias aptu='paru -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
 alias apti='paru -Sy --needed --disable-download-timeout' # install packages
