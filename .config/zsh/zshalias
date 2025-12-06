@@ -143,6 +143,7 @@ alias yt-mp4='yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]"'
 alias yt='yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]"'
 alias cw="swww img --transition-type random"
 alias jinx='ollama run Jinx'
+alias stow-force='stow --adopt . && git reset --hard HEAD'
 
 ## VirusTotal
 alias vts='vt scan file'
