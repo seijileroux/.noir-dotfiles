@@ -30,18 +30,6 @@ position = "25% 25%"
 # max_size = "1920px 100%"
 lazy = true
 
-[scratchpads.vscode]
-animation = "fromTop"
-command = "code"
-class = "code-oss"
-size = "96% 96%"
-position = "2% 2%"
-# max_size = "1920px 100%"
-lazy = true
-match_by = "class"
-skip_windowrules = ["aspect", "workspace"]
-process_tracking = false
-
 [scratchpads.volume]
 animation = "fromTop"
 command = "pavucontrol -t 3"
