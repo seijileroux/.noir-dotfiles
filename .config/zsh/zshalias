@@ -72,6 +72,7 @@ alias pnrb='pnpm run build'
 
 alias denc='deno run -A npm:create-next-app@latest'
 alias dens='deno task dev'
+alias deni='deno install --allow-scripts=npm:sharp,npm:unrs-resolver'
 
 # Pacman
 alias aptu='paru -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
