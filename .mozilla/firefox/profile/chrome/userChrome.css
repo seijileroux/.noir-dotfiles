@@ -1,6 +1,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* In about:config set toolkit.legacyUserProfileCustomizations.stylesheets to true */
 
-/* Target empty label bookmark with URL containing github.com and use github.png icon in same folder */
+/* Target the bookmark with  "GitHub" label and URL containing github.com, and use github.png icon in same folder */
 .bookmark-item[label="GitHub"] {
   list-style: url("./icons/github.png") !important;
 }
