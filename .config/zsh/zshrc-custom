@@ -30,6 +30,13 @@ zinit snippet OMZP::jsontools
 source ~/.config/zsh/zshvars
 source ~/.config/zsh/zshalias
 
+# Edit command buffer
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
+
+# Enable zmv for complex mv commands
+autoload zmv
 
 # Completion styling
 autoload -Uz compinit
