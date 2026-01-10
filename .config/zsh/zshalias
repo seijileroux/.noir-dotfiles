@@ -44,6 +44,7 @@ alias gra='git remote add origin'
 alias grv='git remote -v'
 alias grs='git remote set-url'
 alias grso='git remote set-url origin'
+alias grao='git remote add origin'
 alias glfsverifyfalse='git config --global http.sslVerify false'
 alias gsuir='git submodule update --init --recursive'
 alias gtree='git log -30 --oneline --graph'
@@ -76,6 +77,9 @@ alias pnrb='pnpm run build'
 alias denc='deno run -A npm:create-next-app@latest'
 alias dens='deno task dev'
 alias deni='deno install --allow-scripts=npm:sharp,npm:unrs-resolver'
+
+alias bunc='bun create next-app@latest'
+alias bunrd='bun --bun run dev'
 
 # Pacman
 # alias aptu='paru -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
@@ -138,6 +142,7 @@ alias mac1='sudo ifconfig wlan1 down && sudo macchanger -r wlan1 && sudo ifconfi
 alias maceth0='sudo ifconfig eth0 down && sudo macchanger -r eth0 && sudo ifconfig eth0 up'
 
 alias ovp='sudo openvpn'
+alias dnsflush='sudo resolvectl flush-caches'
 alias own='sudo chown -R $USER:$GROUP'
 alias pk='pkill -f'
 alias pksysset='pkill -f systemsettings' # kill KDE settings app in case it gets stuck
