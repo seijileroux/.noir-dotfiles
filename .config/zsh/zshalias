@@ -80,6 +80,8 @@ alias deni='deno install --allow-scripts=npm:sharp,npm:unrs-resolver'
 
 alias bunc='bun create next-app@latest'
 alias bunrd='bun --bun run dev'
+alias buni='bun i'
+alias buna='bun a'
 
 # Pacman
 # alias aptu='paru -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
