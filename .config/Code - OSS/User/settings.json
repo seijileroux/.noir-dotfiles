@@ -1,20 +1,25 @@
 {
-    "workbench.startupEditor": "none",
-    "security.workspace.trust.emptyWindow": false,
-    "security.workspace.trust.enabled": false,
-    "workbench.iconTheme": "catppuccin-macchiato",
-    "workbench.colorTheme": "Catppuccin Macchiato",
-    "editor.fontFamily": "'Hack', 'monospace', monospace",
-    "editor.rulers": [
-        80,
-        120
-    ],
-    "git.openRepositoryInParentFolders": "never",
-    "continue.model": "ollama",
-    "continue.modelParameters": {
-        "model": "gemma3n:e2b-it-q4_K_M"
-    },
-    "editor.fontSize": 16,
-    "explorer.confirmDelete": false,
-    "deno.enable": true
+  "workbench.startupEditor": "none",
+  "security.workspace.trust.emptyWindow": false,
+  "security.workspace.trust.enabled": false,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "editor.fontFamily": "'Hack', 'monospace', monospace",
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 2,
+  "git.openRepositoryInParentFolders": "never",
+  "editor.fontSize": 16,
+  "explorer.confirmDelete": false,
+  "workbench.activityBar.location": "top",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "prettier.prettier-vscode",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.commandPalette.showAskInChat": false,
+  "chat.agent.enabled": false,
+  "editor.inlineSuggest.enabled": false,
+  "editor.inlineSuggest.syntaxHighlightingEnabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "mcpServers": {},
 }
