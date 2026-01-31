@@ -168,6 +168,11 @@ alias cw="swww img --transition-type random"
 alias jinx='ollama run Jinx'
 alias stow-force='stow --adopt . && git reset --hard HEAD'
 
+# Convert image to favicon.ico
+favicon() {
+  magick -background transparent "$1" -define icon:auto-resize=$2 "favicon.ico"
+}
+
 ## VirusTotal
 alias vts='vt scan file'
 alias vta='vt analysis'
