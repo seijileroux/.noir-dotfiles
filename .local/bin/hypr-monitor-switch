@@ -19,11 +19,11 @@ configdir="$HOME/.config/hypr/conf"
 
 if [ "$(cmp $configdir/monitors.conf $configdir/monitors-1.conf)" ]; then
   cp "$configdir/monitors-1.conf" "$configdir/monitors.conf"
-  cp "$configdir/monitors-1.conf" "$configdir/monitors.conf"
+  # cp "$configdir/monitors-1.conf" "$configdir/monitors.conf"
   echo "Activated single monitor config"
 elif [ "$(cmp $configdir/monitors.conf $configdir/monitors-2.conf)" ]; then
   cp "$configdir/monitors-2.conf" "$configdir/monitors.conf"
-  cp "$configdir/monitors-2.conf" "$configdir/monitors.conf"
+  # cp "$configdir/monitors-2.conf" "$configdir/monitors.conf"
   echo "Activated dual monitor config"
 else
   echo "Unsupported monitor count: $gmonitors"
