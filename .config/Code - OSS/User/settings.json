@@ -22,4 +22,5 @@
   "editor.inlineSuggest.syntaxHighlightingEnabled": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "mcpServers": {},
+  "telemetry.telemetryLevel": "off",
 }
