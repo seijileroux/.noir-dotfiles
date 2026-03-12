@@ -1,6 +1,7 @@
 [config]
 
 [config.wallpaper]
+set = true
 command = "swww img --transition-type random {{ image }}"
 
 [templates.bat]
